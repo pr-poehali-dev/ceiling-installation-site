@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Fetch news successfully",
+      "method": "GET",
+      "path": "/",
+      "queryParams": {
+        "category": "technology"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}

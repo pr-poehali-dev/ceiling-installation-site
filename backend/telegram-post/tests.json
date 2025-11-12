@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Post news to Telegram - missing news_id",
+      "method": "POST",
+      "path": "/",
+      "body": {},
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "news_id is required"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
